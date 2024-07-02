@@ -1,5 +1,5 @@
 [package]
-name = "quad_pingpong"
+name = "bouncy_pong"
 version = "0.1.0"
 edition = "2021"
 
