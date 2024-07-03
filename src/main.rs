@@ -164,7 +164,6 @@ async fn main() {
         enemy_lerp: 0.,
     };
     loop {
-        get_context();
         clear_background(BLACK);
         draw_line(
             screen_width() / 2.,
@@ -195,13 +194,12 @@ async fn main() {
             game_state.enemy.transform.size.y,
             WHITE,
         );
-        draw_ellipse(
+        draw_rectangle(
             game_state.ball.transform.pos.x,
             game_state.ball.transform.pos.y,
             game_state.ball.transform.size.x,
             game_state.ball.transform.size.y,
-            0.,
-            YELLOW,
+            WHITE,
         );
         game_state.handle_player();
         game_state.handle_enemy();
